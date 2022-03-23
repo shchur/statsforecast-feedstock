@@ -1,6 +1,5 @@
-{% set settingsfile = "settings.ini" %}
 {% set name = "statsforecast" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,22 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/statsforecast-{{ version }}.tar.gz
-  sha256: 35280511dfc166bd71c96d74e808f0c7668582f3d28b1a4e59fe863c66e34c40
+  sha256: 36904d20edd90665ccdd9572212e25848dbb9147f9aef663a892cf109aa98793
 
 build:
   number: 0
   noarch: python
   script:
-    ## NOTE: remove the following once the 
-    #        following PR is merged.
-    #  PR: https://github.com/Nixtla/statsforecast/pull/24
-    #
-    ## Ensure inclusion of settings.ini
-    {% set settingsfile = "settings.ini" %}
-    # IF {{ settingsfile }} is NOT PRESENT, COPY {{ settingsfile }} from $RECIPE_DIR
-    - echo -e "\n>>> ENSURE INCLUSION OF '{{ settingsfile }}' <<<\n\n"
-    - if [ ! -f {{ settingsfile }} ]; then cp $RECIPE_DIR/{{ settingsfile }} {{ settingsfile }}; fi  # [not win]
-    - copy {{ environ.get("RECIPE_DIR") }}\{{ settingsfile }} {{ settingsfile }}  # [win]
     - {{ PYTHON }} -m pip install . -vv
 
 

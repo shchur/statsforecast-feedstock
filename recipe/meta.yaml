@@ -10,7 +10,7 @@ source:
   sha256: 52cf6d099097feb2f61b86da06cb3db1f7a63173560f189d1f0879051bcf223d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv
@@ -27,6 +27,7 @@ requirements:
     - pandas
     - scipy
     - statsmodels
+    - tqdm
 
 test:
   imports:
@@ -39,7 +40,7 @@ test:
 about:
   home: https://github.com/Nixtla/statsforecast/
   summary: Time series forecasting suite using statistical models
-  license: GPL-3.0-only
+  license: Apache-2.0
   license_file: LICENSE
   description: |
     **StatsForecast** offers a collection of widely used univariate time series forecasting 
@@ -57,3 +58,4 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
+    - FedericoGarza

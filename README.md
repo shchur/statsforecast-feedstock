@@ -3,7 +3,7 @@ About statsforecast
 
 Home: https://github.com/Nixtla/statsforecast/
 
-Package license: GPL-3.0-only
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/statsforecast-feedstock/blob/main/LICENSE.txt)
 
@@ -157,5 +157,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@FedericoGarza](https://github.com/FedericoGarza/)
 * [@sugatoray](https://github.com/sugatoray/)
 

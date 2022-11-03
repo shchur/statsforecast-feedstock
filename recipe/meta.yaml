@@ -1,5 +1,5 @@
 {% set name = "statsforecast" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/statsforecast-{{ version }}.tar.gz
-  sha256: 52bbadaa7335fc58dbf6fa2056a5f809c59175429b7d62569d620a850ebee611
+  sha256: 85dd7284ce86b60d2e6343dd3056021f0084446fc733dcc017cfe9e3a21c1dbd
 
 build:
   number: 0

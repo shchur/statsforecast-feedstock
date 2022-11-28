@@ -10,7 +10,7 @@ source:
   sha256: 4151c75e62b1b1e2169d62387a9d63d6ffd3a2b89d16a432a6a3301c08d8e35a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv
@@ -28,6 +28,8 @@ requirements:
     - scipy
     - statsmodels
     - tqdm
+    - matplotlib-base
+    - plotly
 
 test:
   imports:

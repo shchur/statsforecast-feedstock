@@ -28,7 +28,7 @@ requirements:
     - scipy
     - statsmodels
     - tqdm
-    - matplotlib
+    - matplotlib-base
     - plotly
 
 test:

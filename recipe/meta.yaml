@@ -31,6 +31,7 @@ requirements:
     - tqdm
     - matplotlib-base
     - plotly
+    - plotly-resampler
 
 test:
   imports:

@@ -1,11 +1,11 @@
-About statsforecast
-===================
+About statsforecast-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/statsforecast-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Nixtla/statsforecast/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/statsforecast-feedstock/blob/main/LICENSE.txt)
 
 Summary: Time series forecasting suite using statistical models
 

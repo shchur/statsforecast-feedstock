@@ -1,5 +1,5 @@
 {% set name = "statsforecast" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/statsforecast-{{ version }}.tar.gz
-  sha256: 3196e52908d8a2439d732dc49f4d3f0ae9c5993be23622ccedd152b1671be802
+  sha256: db73ec21bc81f24d5e22d3508b0a2084a4511719b240a922823db283dba12c52
 
 build:
   number: 0
@@ -26,12 +26,11 @@ requirements:
     - numba
     - numpy
     - pandas
+    - polars
     - scipy
     - statsmodels
     - tqdm
     - matplotlib-base
-    - plotly
-    - plotly-resampler >=0.8.3
     - antlr4-python3-runtime >=4.11.1,<4.12
 
 test:

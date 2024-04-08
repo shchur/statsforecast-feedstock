@@ -1,5 +1,5 @@
 {% set name = "statsforecast" %}
-{% set version = "1.7.3" %}
+{% set version = "1.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/statsforecast-{{ version }}.tar.gz
-  sha256: 5f78ce296cf5feb69c3327a2aceacae097e9b9c4bbb507218d8f50efd0cf13c6
+  sha256: eaea757f0a8835bea5a710df02c3248c0bc0eff940ae8d83a46fc339abb52280
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - python >=3.8
     - antlr4-python3-runtime >=4.11.1,<4.12
     - cloudpickle
+    - coreforecast >=0.0.7
     - fugue >=0.8.1
     - matplotlib-base
     - numba >=0.55.0
